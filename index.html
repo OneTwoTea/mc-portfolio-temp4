@@ -1,0 +1,92 @@
+<!-- ĐÂY LÀ FILE KHUNG — Không sửa nội dung trực tiếp ở đây.
+     Nội dung lấy từ site.config.js, các khối {{{ @ten }}} do src/templates.js sinh ra.
+     {{ duong.dan }} = chèn giá trị (đã escape), {{{ @tenRenderer }}} = chèn HTML.
+     Build sẽ tự xóa comment này. -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  {{{ @seoHead }}}
+  <script>document.documentElement.classList.add("js")</script>
+  <!-- Google Fonts: Plus Jakarta Sans (hỗ trợ tiếng Việt), chỉ 4 weight đang dùng, display=swap, không chặn render -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-ink text-white font-sans antialiased">
+
+  <a href="#main" class="skip-link">Bỏ qua đến nội dung chính</a>
+
+  <!-- ═══ HEADER: không viền, logo chữ góc trái, hamburger nét đậm góc phải ═══ -->
+  <header id="site-header" class="site-header">
+    <div class="flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-10 h-16 md:h-20">
+      <a href="#hero" class="site-logo" aria-label="{{ brand.name }} — về đầu trang">{{ brand.name }}</a>
+
+      <div class="flex items-center gap-2 md:gap-6">
+        <a {{{ @ctaAttrs }}} class="header-cta hidden md:inline-flex">{{ header.ctaButton.label }}</a>
+        <button type="button" id="menu-toggle" class="burger" aria-expanded="false" aria-controls="site-menu" aria-label="Mở menu">
+          <span class="hidden md:inline text-sm font-semibold uppercase tracking-[0.2em]">{{ header.menuLabel }}</span>
+          <span class="burger-lines" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ MENU TOÀN MÀN HÌNH (ngoài header để không bị hiệu ứng hòa màu của header ảnh hưởng) ═══ -->
+  <div id="site-menu" class="site-menu" aria-label="Menu">
+    <div class="site-menu-inner">
+      <nav aria-label="Menu chính">
+        <ul class="menu-links">
+          {{{ @mobileNav }}}
+        </ul>
+      </nav>
+      <div class="mt-auto pt-10 flex flex-col gap-6">
+        <a {{{ @ctaAttrs }}} class="cta-thin cta-thin--gold self-start text-2xl">{{ header.ctaButton.label }}</a>
+        <div class="flex flex-wrap gap-x-6 gap-y-1">
+          {{{ @menuContact }}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ═══ 1. HERO — VIDEO LỒNG CHỮ ═══ -->
+    {{{ @heroSection }}}
+
+    <!-- ═══ 2. GIỚI THIỆU — THE STATEMENT ═══ -->
+    {{{ @aboutSection }}}
+
+    <!-- ═══ 3. DỊCH VỤ — MENU CHỮ KHỔNG LỒ ═══ -->
+    {{{ @servicesSection }}}
+
+    <!-- ═══ 4. HIGHLIGHT REEL ═══ -->
+    {{{ @videosSection }}}
+
+    <!-- ═══ 5. EDITORIAL GALLERY ═══ -->
+    {{{ @gallerySection }}}
+
+    <!-- ═══ 6. ĐỐI TÁC ═══ -->
+    {{{ @partnersSection }}}
+
+    <!-- ═══ 7. CẢM NHẬN ═══ -->
+    {{{ @testimonialsSection }}}
+
+    <!-- ═══ 8. FAQ ═══ -->
+    {{{ @faqSection }}}
+  </main>
+
+  <!-- ═══ 9. LIÊN HỆ — MEGA FOOTER ĐEN TUYỀN ═══ -->
+  <footer id="contact" class="mega-footer">
+    {{{ @contactSection }}}
+    {{{ @footerSection }}}
+  </footer>
+
+  <!-- ═══ NÚT NỔI: VÒNG CHỮ XOAY ═══ -->
+  {{{ @floatingButton }}}
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
