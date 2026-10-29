@@ -229,42 +229,42 @@ export const SITE_CONFIG = {
     items: [
       {
         src: "public/images/gallery/gallery-01.webp",    // 900×1125px
-        alt: "MC dẫn chương trình đám cưới sang trọng",
+        alt: "MC vest đen cầm kịch bản trên sân khấu tiệc hoa trắng",
         category: "Đám cưới",
       },
       {
         src: "public/images/gallery/gallery-02.webp",
-        alt: "MC trên sân khấu gala doanh nghiệp",
+        alt: "MC đứng bục phát biểu tại lễ kỷ niệm của doanh nghiệp",
         category: "Doanh nghiệp",
       },
       {
         src: "public/images/gallery/gallery-03.webp",
-        alt: "Khoảnh khắc tương tác với khán giả",
+        alt: "MC giao lưu, khuấy động khách mời tại year-end party",
         category: "Sự kiện",
       },
       {
         src: "public/images/gallery/gallery-04.webp",
-        alt: "MC dẫn đám cưới ngoài trời",
+        alt: "MC vest trắng nơ đen trước cổng hoa tiệc cưới",
         category: "Đám cưới",
       },
       {
         src: "public/images/gallery/gallery-05.webp",
-        alt: "Gala dinner doanh nghiệp",
+        alt: "MC dẫn chương trình trên sân khấu sự kiện doanh nghiệp",
         category: "Doanh nghiệp",
       },
       {
         src: "public/images/gallery/gallery-06.webp",
-        alt: "Chuẩn bị trước sự kiện",
+        alt: "MC công bố giải đặc biệt trong phần bốc thăm trúng thưởng",
         category: "Hậu trường",
       },
       {
         src: "public/images/gallery/gallery-07.webp",
-        alt: "MC festival âm nhạc",
+        alt: "MC vest đen trên sân khấu Year End Party",
         category: "Sự kiện",
       },
       {
         src: "public/images/gallery/gallery-08.webp",
-        alt: "Chụp ảnh cùng cặp đôi",
+        alt: "MC cúi chào khán giả trên sân khấu tiệc hoa",
         category: "Đám cưới",
       },
     ],
@@ -279,12 +279,12 @@ export const SITE_CONFIG = {
     sectionLabel: "Đối Tác",
     heading: "Tin Tưởng Bởi",
     items: [
-      { name: "Công ty A", logo: "public/images/partners/partner-01.webp" },
-      { name: "Công ty B", logo: "public/images/partners/partner-02.webp" },
-      { name: "Công ty C", logo: "public/images/partners/partner-03.webp" },
-      { name: "Công ty D", logo: "public/images/partners/partner-04.webp" },
-      { name: "Công ty E", logo: "public/images/partners/partner-05.webp" },
-      { name: "Công ty F", logo: "public/images/partners/partner-06.webp" },
+      { name: "Vietcombank", logo: "public/images/partners/partner-01.webp" },
+      { name: "MB Bank", logo: "public/images/partners/partner-02.webp" },
+      { name: "ACB", logo: "public/images/partners/partner-03.webp" },
+      { name: "VPBank", logo: "public/images/partners/partner-04.webp" },
+      { name: "VIB", logo: "public/images/partners/partner-05.webp" },
+      { name: "HSBC", logo: "public/images/partners/partner-06.webp" },
     ],
   },
 
