@@ -686,6 +686,7 @@ export function createRenderers(config) {
           <p>${esc(f.madeWith || "")}</p>
           ${f.backToTop ? `<a href="#hero" data-back-to-top class="link-thin text-white">Lên đầu trang${icon("arrowUp", "w-4 h-4")}</a>` : ""}
         </div>
+        <p class="mt-6 text-center text-xs text-mute-dark">© 2026 ProfileStudio.me. Nền tảng xây dựng hồ sơ cá nhân chuyên nghiệp.</p>
       </div>`;
     },
 
